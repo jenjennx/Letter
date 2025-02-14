@@ -18,27 +18,27 @@ body *:lang(th), .thai-text {
     color: #850e35;
     font-size: 28px;
     text-align: center;
-}
 
-/* Heart Section */
+/* Fix heart display */
 .hearts {
     display: flex;
-    justify-content: center;
-    gap: 15px;
+    flex-direction: column; /* Stack hearts in a column */
+    align-items: center; /* Center them */
+    gap: 10px; /* Add spacing between hearts */
     margin-top: 20px;
 }
 
 .heart {
-    font-size: 50px;
+    font-size: 50px; /* Ensure emoji size is large */
     cursor: pointer;
-    display: inline-block;
+    display: block; /* Make each heart its own block */
+    text-align: center;
     transition: transform 0.2s;
 }
 
 .heart:hover {
-    transform: scale(1.2);
+    transform: scale(1.2); /* Slight zoom effect */
 }
-
 /* Hidden Message */
 .hidden {
     display: none;
