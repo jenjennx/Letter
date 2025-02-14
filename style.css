@@ -20,6 +20,97 @@ body *:lang(th), .thai-text {
     text-align: center;
 }
 
+/* Heart Section */
+.hearts {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.heart {
+    font-size: 50px;
+    cursor: pointer;
+    display: inline-block;
+    transition: transform 0.2s;
+}
+
+.heart:hover {
+    transform: scale(1.2);
+}
+
+/* Hidden Message */
+.hidden {
+    display: none;
+}
+
+#message {
+    font-size: 20px;
+    color: #ee6983;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* 📨 Envelope Animation */
+.letter-wrapper {
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+}
+
+.closed-envelope {
+    background: url('images/closed envelope.png') no-repeat center;
+    background-size: contain;
+    width: 200px;
+    height: 150px;
+    margin: auto;
+    cursor: pointer;
+    transition: transform 1s ease-in-out, opacity 0.5s;
+}
+
+.open-envelope {
+    display: none;
+    background: url('images/open-envelope.png') no-repeat center;
+    background-size: contain;
+    width: 200px;
+    height: 150px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* 📜 Letter Paper */
+.paper {
+    display: none;
+    background: url('images/paper.png') no-repeat center;
+    background-size: contain;
+    width: 280px;
+    height: 350px;
+    margin: auto;
+    padding: 20px;
+    font-family: 'Sriracha', cursive;
+    font-size: 18px;
+    color: black;
+    line-height: 1.6;
+    text-align: left;
+    position: relative;
+    top: -50px;
+    animation: slideUp 1s ease-in-out;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 /* Spotify Playlist */
 #spotify-section {
     display: none;
@@ -46,3 +137,4 @@ body *:lang(th), .thai-text {
     font-size: 14px;
     color: black;
 }
+   
