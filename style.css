@@ -103,7 +103,9 @@ body {
     border: none;
     display: none;
 }
-
+.thai-text {
+    font-family: 'Sriracha', cursive;
+}
 #spotify-section {
     display: none;
     margin-top: 50px;
@@ -112,7 +114,7 @@ body {
     text-align: center;
 }
 .song p {
-    font-family: 'Georgia', 'Sriracha', serif; /* Updated to Georgia */
+    font-family: 'Georgia', serif; /* Updated to Georgia */
     font-size: 16px;
     font-weight: bold;
     color: #850e35;
