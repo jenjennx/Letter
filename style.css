@@ -59,7 +59,7 @@ body *:lang(th), .thai-text {
 }
 
 .closed-envelope {
-    background: url('images/closed envelope.jpg') no-repeat center;
+    background: url('images/closed-envelope.png') no-repeat center;
     background-size: contain;
     width: 200px;
     height: 150px;
@@ -70,7 +70,7 @@ body *:lang(th), .thai-text {
 
 .open-envelope {
     display: none;
-    background: url('images/open-envelope.jpg') no-repeat center;
+    background: url('images/open-envelope.png') no-repeat center;
     background-size: contain;
     width: 200px;
     height: 150px;
@@ -81,10 +81,9 @@ body *:lang(th), .thai-text {
     transform: translateX(-50%);
 }
 
-/* 📜 Letter Paper */
 .paper {
     display: none;
-    background: url('images/paper-texture.jpg') no-repeat center;
+    background: url('images/paper.png') no-repeat center;
     background-size: contain;
     width: 280px;
     height: 350px;
