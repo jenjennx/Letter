@@ -18,75 +18,83 @@ body {
 }
 
 .heading {
-    font-family: 'Lucida Calligraphy', cursive;
+    font-family: 'Lucida Calligraphy', 'Brush Script MT', cursive;
     color: #850e35;
     font-size: 28px;
     text-align: center;
 }
-.hearts {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
-    flex-wrap: wrap;
-}
+
 
 .heart-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.heart {
     font-size: 40px;
     border: none;
     background: none;
     cursor: pointer;
-    display: inline-block;
-    margin: 10px;
-    transition: transform 0.5s;
-}
-
-.heart:hover {
-    transform: scale(1.2);
-}
-
-.hidden {
-    display: none;
-    font-size: 20px;
-    margin-top: 20px;
-    animation: fadeIn 1s ease-in-out;
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    transform: scale(1.5);
 }
 
 .letter-wrapper {
     text-align: center;
     margin-top: 20px;
+    position: relative;
 }
 
-.envelope {
-    background: url('envelope.png') no-repeat center;
+.closed-envelope {
+    background: url('closed-envelope.png') no-repeat center;
     background-size: contain;
     width: 150px;
     height: 100px;
     margin: auto;
     cursor: pointer;
+    transition: transform 1s ease-in-out, opacity 0.5s;
 }
 
-.letter-container {
+.open-envelope {
     display: none;
-    padding: 20px;
-    background: #fff3f3;
-    max-width: 500px;
+    background: url('open-envelope.png') no-repeat center;
+    background-size: contain;
+    width: 150px;
+    height: 100px;
     margin: auto;
-    text-align: left;
-    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .paper {
-    background: url('paper-texture.png');
+    display: none;
+    background: url('paper.png') no-repeat center;
+    background-size: contain;
+    width: 250px;
+    height: 300px;
+    margin: auto;
     padding: 20px;
     font-family: 'Sriracha', cursive;
     font-size: 18px;
     color: black;
     line-height: 1.6;
+    text-align: left;
+    position: relative;
+    top: -50px;
+    animation: slideUp 1s ease-in-out;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .close-letter-btn {
@@ -98,43 +106,9 @@ body {
 }
 
 #spotify-section {
-    background-color: #ffd1dc; /* Light pink */
+    display: none;
+    margin-top: 50px;
     padding: 20px;
-    border-radius: 10px;
-    margin-top: 20px;
-    max-width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-.song {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #fff5e4;
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 10px;
-    max-width: 600px;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.song p {
-    flex: 1;
-    text-align: left;
-    font-family: 'Oswald', sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-    color: #850e35;
-    margin: 0;
-}
-
-.song-explanation {
-    flex: 2;
-    text-align: right;
-    font-size: 14px;
-    color: black;
+    background: #ffd1dc;
+    text-align: center;
 }
