@@ -1,5 +1,7 @@
 document.querySelectorAll('.heart').forEach(button => {
-    button.innerHTML = "💝";
+    if (!button.innerHTML.trim()) { // Prevent overwriting if already set
+        button.innerHTML = "💝"; 
+    }
     button.addEventListener('click', function() {
         document.getElementById('heart-message').innerText = this.getAttribute('data-message');
     });
