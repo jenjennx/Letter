@@ -1,46 +1,56 @@
 body {
     background-color: #ffc4c4; /* Pink background */
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Georgia', serif;
+    color: #850e35;
     text-align: center;
     margin: 0;
-    padding: 0;
+    padding: 20px;
 }
 
 .container {
-    background-color: #fff5e4; /* White container */
+    background-color: #fff3f3; /* White container */
     padding: 20px;
     border-radius: 10px;
     max-width: 600px;
     margin: auto;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
 .heading {
-    font-family: 'Fleur De Leah', cursive;
+    font-family: 'Lucida Calligraphy', cursive;
     color: #850e35;
     font-size: 28px;
     text-align: center;
 }
 
-.heart-container {
+.hearts {
     display: flex;
     justify-content: center;
-    gap: 15px;
-    margin-top: 20px;
+    margin: 20px 0;
 }
 
 .heart {
-    font-size: 40px;
-    border: none;
-    background: none;
+    font-size: 50px;
     cursor: pointer;
-    transform: scale(1.5);
+    margin: 10px;
+    transition: transform 0.3s;
 }
 
-#heart-message {
+.heart:hover {
+    transform: scale(1.2);
+}
+
+.hidden {
+    display: none;
     font-size: 20px;
-    color: #ee6983;
-    margin-top: 10px;
-    font-weight: bold;
+    margin-top: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 .letter-wrapper {
@@ -60,7 +70,7 @@ body {
 .letter-container {
     display: none;
     padding: 20px;
-    background: #fff;
+    background: #fff3f3;
     max-width: 500px;
     margin: auto;
     text-align: left;
@@ -93,7 +103,7 @@ body {
 }
 
 .song p a {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Georgia', serif;
     font-size: 16px;
     font-weight: bold;
     color: #850e35;
