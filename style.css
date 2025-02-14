@@ -6,6 +6,9 @@ body {
     padding: 0
 }
 
+p:lang(th), a:lang(th), span:lang(th) {
+    font-family: 'Sriracha', cursive;
+}
 .container {
     background-color: #fff3f3; /* White container */
     padding: 20px;
