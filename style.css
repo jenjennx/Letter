@@ -1,133 +1,48 @@
+/* Background and Font Styles */
 body {
-    background-color: #ffc4c4 !important; /* Pink background */
-    font-family: 'Georgia', serif; /* Updated to Georgia */
+    background-color: #ffc4c4 !important;
+    font-family: 'Georgia', serif;
     text-align: center;
     margin: 0;
-    padding: 0
+    padding: 0;
 }
 
-p:lang(th), a:lang(th), span:lang(th) {
-    font-family: 'Sriracha', cursive;
-}
-.container {
-    background-color: #fff3f3; /* White container */
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 600px;
-    margin: auto;
-    border-radius: 15px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+/* Automatically apply Sriracha font to Thai text */
+body *:lang(th), .thai-text {
+    font-family: 'Sriracha', cursive !important;
 }
 
+/* Header */
 .heading {
-    font-family: 'Lucida Calligraphy', cursive; /* Updated to Lucida Calligraphy */
+    font-family: "Lucida Calligraphy", "Brush Script MT", cursive !important;
     color: #850e35;
     font-size: 28px;
     text-align: center;
 }
 
-
-.heart-container {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-
-.heart {
-    font-size: 50px; /* Large size for visibility */
-    border: none;
-    background: none;
-    cursor: pointer;
-    display: inline-block;
-    transform: scale(1.5);
-    line-height: 1; /* Prevents emoji cutoff */
-}
-
-.letter-wrapper {
-    text-align: center;
-    margin-top: 20px;
-    position: relative;
-}
-
-.closed-envelope {
-    background: url('closed envelope.jpg') no-repeat center;
-    background-size: contain;
-    width: 150px;
-    height: 100px;
-    margin: auto;
-    cursor: pointer;
-    transition: transform 1s ease-in-out, opacity 0.5s;
-}
-
-.open-envelope {
-    display: none;
-    background: url('open envelope.jpg') no-repeat center;
-    background-size: contain;
-    width: 150px;
-    height: 100px;
-    margin: auto;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.paper {
-    display: none;
-    background: url('paper-texture.jpg') no-repeat center;
-    background-size: contain;
-    width: 250px;
-    height: 300px;
-    margin: auto;
-    padding: 20px;
-    font-family: 'Sriracha', cursive;
-    font-size: 18px;
-    color: black;
-    line-height: 1.6;
-    text-align: left;
-    position: relative;
-    top: -50px;
-    animation: slideUp 1s ease-in-out;
-}
-
-@keyframes slideUp {
-    from {
-        opacity: 0;
-        transform: translateY(50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.close-letter-btn {
-    background-color: #850e35;
-    color: white;
-    padding: 10px;
-    border: none;
-    display: none;
-}
-.thai-text {
-    font-family: 'Sriracha', cursive;
-}
+/* Spotify Playlist */
 #spotify-section {
     display: none;
     margin-top: 50px;
     padding: 20px;
     background: #ffd1dc;
     text-align: center;
+    border-radius: 10px;
 }
-.song p {
-    font-family: 'Georgia', serif; /* Updated to Georgia */
-    font-size: 16px;
+
+.song {
+    padding: 10px;
+    border-bottom: 1px solid #850e35;
+}
+
+.song a {
     font-weight: bold;
+    font-size: 16px;
     color: #850e35;
-    margin: 0;
+    text-decoration: none;
 }
 
 .song-explanation {
-    font-family: 'Georgia', serif; /* Updated to Georgia */
     font-size: 14px;
     color: black;
 }
