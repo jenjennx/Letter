@@ -1,0 +1,108 @@
+body {
+    background-color: #ffc4c4; /* Pink background */
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: #fff5e4; /* White container */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.heading {
+    font-family: 'Fleur De Leah', cursive;
+    color: #850e35;
+    font-size: 28px;
+    text-align: center;
+}
+
+.heart-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.heart {
+    font-size: 40px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    transform: scale(1.5);
+}
+
+#heart-message {
+    font-size: 20px;
+    color: #ee6983;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.letter-wrapper {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.envelope {
+    background: url('envelope.png') no-repeat center;
+    background-size: contain;
+    width: 150px;
+    height: 100px;
+    margin: auto;
+    cursor: pointer;
+}
+
+.letter-container {
+    display: none;
+    padding: 20px;
+    background: #fff;
+    max-width: 500px;
+    margin: auto;
+    text-align: left;
+    border-radius: 10px;
+}
+
+.paper {
+    background: url('paper-texture.png');
+    padding: 20px;
+    font-family: 'Sriracha', cursive;
+    font-size: 18px;
+    color: black;
+    line-height: 1.6;
+}
+
+.close-letter-btn {
+    background-color: #850e35;
+    color: white;
+    padding: 10px;
+    border: none;
+    display: none;
+}
+
+#spotify-section {
+    display: none;
+    margin-top: 50px;
+    padding: 20px;
+    background: white;
+    text-align: center;
+}
+
+.song p a {
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #850e35;
+    text-decoration: none;
+}
+
+.song-explanation {
+    color: black;
+    font-size: 14px;
+    text-align: left;
+    line-height: 1.5;
+}
