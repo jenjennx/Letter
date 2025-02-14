@@ -34,11 +34,13 @@ p:lang(th), a:lang(th), span:lang(th) {
 }
 
 .heart {
-    font-size: 40px;
+    font-size: 50px; /* Large size for visibility */
     border: none;
     background: none;
     cursor: pointer;
+    display: inline-block;
     transform: scale(1.5);
+    line-height: 1; /* Prevents emoji cutoff */
 }
 
 .letter-wrapper {
