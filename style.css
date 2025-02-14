@@ -1,10 +1,9 @@
 body {
-    background-color: #ffc4c4; /* Pink background */
-    font-family: 'Georgia', serif;
-    color: #850e35;
+    background-color: #ffc4c4 !important; /* Pink background */
+    font-family: 'Georgia', serif; /* Updated to Georgia */
     text-align: center;
     margin: 0;
-    padding: 20px;
+    padding: 0
 }
 
 .container {
@@ -18,7 +17,7 @@ body {
 }
 
 .heading {
-    font-family: 'Lucida Calligraphy', 'Brush Script MT', cursive;
+    font-family: 'Lucida Calligraphy', cursive; /* Updated to Lucida Calligraphy */
     color: #850e35;
     font-size: 28px;
     text-align: center;
@@ -111,4 +110,17 @@ body {
     padding: 20px;
     background: #ffd1dc;
     text-align: center;
+}
+.song p {
+    font-family: 'Georgia', 'Sriracha', serif; /* Updated to Georgia */
+    font-size: 16px;
+    font-weight: bold;
+    color: #850e35;
+    margin: 0;
+}
+
+.song-explanation {
+    font-family: 'Georgia', serif; /* Updated to Georgia */
+    font-size: 14px;
+    color: black;
 }
