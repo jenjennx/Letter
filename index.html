@@ -9,17 +9,18 @@
 </head>
 <body>
 
-    <div class="container">
+     <div class="container">
         <h1 class="heading">A love letter from your not very romantic lover 💌</h1>
-        
-        <div class="hearts">
-            <div class="heart" onclick="showMessage(0)">💝</div>
-            <div class="heart" onclick="showMessage(1)">💝</div>
-            <div class="heart" onclick="showMessage(2)">💝</div>
-            <div class="heart" onclick="showMessage(3)">💝</div>
+
+        <div class="heart-container">
+            <button class="heart" data-message="It has always been you 💝"></button>
+            <button class="heart" data-message="You're my sunshine ☀️"></button>
+            <button class="heart" data-message="You make me laugh more than anyone could 😊"></button>
+            <button class="heart" data-message="I adore your eyes when you're looking at me like a cute Golden Retriever 🐶"></button>
+            <button class="heart" data-message="Your happiness is my priority ✌️"></button>
         </div>
 
-        <p id="message" class="hidden"></p>
+        <div id="heart-message"></div>
 
          <div class="letter-wrapper">
             <div class="envelope closed-envelope" id="envelope"></div>
