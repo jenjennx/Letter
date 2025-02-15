@@ -1,6 +1,6 @@
 /* Background & Font Styling */
 body {
-    background-color: #ffeee4 !important;
+    background-color: #ffeee4;
     font-family: 'Georgia', serif;
     text-align: center;
     margin: 0;
@@ -9,7 +9,7 @@ body {
 
 /* Automatically Apply Sriracha for Thai */
 body *:lang(th), .thai-text {
-    font-family: 'Sriracha', cursive !important;
+    font-family: 'Sriracha', cursive;
 }
 
 /* Hearts in One Line */
