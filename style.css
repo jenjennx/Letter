@@ -1,57 +1,37 @@
-/* Background and Font Styles */
+/* Background & Font Styling */
 body {
-    background-color: #ffc4c4 !important;
+    background-color: #ffeee4 !important;
     font-family: 'Georgia', serif;
     text-align: center;
     margin: 0;
     padding: 0;
 }
 
-/* Automatically apply Sriracha font to Thai text */
+/* Automatically Apply Sriracha for Thai */
 body *:lang(th), .thai-text {
     font-family: 'Sriracha', cursive !important;
 }
 
-/* Header */
-.heading {
-    font-family: "Lucida Calligraphy", "Brush Script MT", cursive !important;
-    color: #850e35;
-    font-size: 28px;
-    text-align: center;
-
-/* Fix heart display */
+/* Hearts in One Line */
 .hearts {
     display: flex;
-    flex-direction: column; /* Stack hearts in a column */
-    align-items: center; /* Center them */
-    gap: 10px; /* Add spacing between hearts */
+    justify-content: center;
+    gap: 15px;
     margin-top: 20px;
 }
 
 .heart {
-    font-size: 50px; /* Ensure emoji size is large */
+    font-size: 50px;
     cursor: pointer;
-    display: block; /* Make each heart its own block */
-    text-align: center;
+    display: inline-block;
     transition: transform 0.2s;
 }
 
 .heart:hover {
-    transform: scale(1.2); /* Slight zoom effect */
-}
-/* Hidden Message */
-.hidden {
-    display: none;
+    transform: scale(1.2);
 }
 
-#message {
-    font-size: 20px;
-    color: #ee6983;
-    margin-top: 10px;
-    font-weight: bold;
-}
-
-/* 📨 Envelope Animation */
+/* Envelope Styling */
 .letter-wrapper {
     text-align: center;
     margin-top: 20px;
@@ -59,31 +39,27 @@ body *:lang(th), .thai-text {
 }
 
 .closed-envelope {
-    background: url('images/closed-envelope.png') no-repeat center;
+    background: url('images/closed envelope.jpg') no-repeat center;
     background-size: contain;
     width: 200px;
     height: 150px;
     margin: auto;
     cursor: pointer;
-    transition: transform 1s ease-in-out, opacity 0.5s;
 }
 
 .open-envelope {
     display: none;
-    background: url('images/open-envelope.png') no-repeat center;
+    background: url('images/open envelope.jpg') no-repeat center;
     background-size: contain;
     width: 200px;
     height: 150px;
     margin: auto;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
 }
 
+/* Paper (Letter) */
 .paper {
     display: none;
-    background: url('images/paper.png') no-repeat center;
+    background: url('images/paper-texture.JPG') no-repeat center;
     background-size: contain;
     width: 280px;
     height: 350px;
@@ -110,7 +86,7 @@ body *:lang(th), .thai-text {
     }
 }
 
-/* Spotify Playlist */
+/* Playlist Section */
 #spotify-section {
     display: none;
     margin-top: 50px;
@@ -120,20 +96,9 @@ body *:lang(th), .thai-text {
     border-radius: 10px;
 }
 
-.song {
-    padding: 10px;
-    border-bottom: 1px solid #850e35;
-}
-
 .song a {
     font-weight: bold;
     font-size: 16px;
     color: #850e35;
     text-decoration: none;
 }
-
-.song-explanation {
-    font-size: 14px;
-    color: black;
-}
-   
